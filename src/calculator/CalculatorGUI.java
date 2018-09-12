@@ -33,7 +33,6 @@ public class CalculatorGUI {
     private JButton eraseButton;
     private JButton clearButton;
     private JTextField expressionField;
-    private JTextField check;
     private ArrayList<String> operationMarks;
     private int notClosedBracketCount = 0;
     private Calculator calculator;
@@ -63,7 +62,6 @@ public class CalculatorGUI {
         frame.addKeyListener(new KeyAdapter() {
             public void keyReleased(KeyEvent e) {
                 int keyCode = e.getKeyCode();
-                check.setText(Integer.toString(keyCode));
                 if(e.isShiftDown()){
                     if(keyCode == 57){      //открывающаяся скобка
                         addOpenBracket();

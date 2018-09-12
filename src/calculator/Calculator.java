@@ -35,11 +35,7 @@ public class Calculator
                 }
             }
         }
-        System.out.print(expression);
         operands = parseExpression(expression);
-        for (int i = 0; i <= operands.size()-1; i++){
-            //System.out.println(operands.get(i).getNumber() + operands.get(i).getOperation() + operands.get(i).getPriority());
-        }
 
         for (int i = 0; i <= operands.size()-1; i++){       //цикл выполнения операций умножения  и деления
             if(operands.size() != 1){
